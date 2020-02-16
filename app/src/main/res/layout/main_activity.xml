@@ -7,16 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/myNavHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-            <fragment
-                android:id="@+id/myNavHostFragment"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:navGraph="@navigation/nav_graph"
-                app:devaultNavHost="true"/>
-    </LinearLayout>
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true" />
+
+    <!--    The FragmentContainerView replaced the "fragment as a child of LinearLayout" XML below.-->
+    <!--    This was recommended by the Git commit and makes sense in the context of this layout, but-->
+    <!--    with a more complex layout it might make sense to go back to a "fragment inside layout" structure.-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+    <!--            <fragment-->
+    <!--                android:id="@+id/myNavHostFragment"-->
+    <!--                android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                app:navGraph="@navigation/nav_graph"-->
+    <!--                app:defaultNavHost="true" />-->
+    <!--    </LinearLayout>-->
 </FrameLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Starter Skeleton</string>
+    <string name="add_button">Make that number bigger</string>
 </resources>
