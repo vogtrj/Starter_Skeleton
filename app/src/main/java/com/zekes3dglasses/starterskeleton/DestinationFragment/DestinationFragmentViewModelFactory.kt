@@ -1,0 +1,3 @@
+package com.zekes3dglasses.starterskeleton.DestinationFragment
+
+class DestinationFragmentViewModelFactory

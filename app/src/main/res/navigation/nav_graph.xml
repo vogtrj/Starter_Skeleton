@@ -9,5 +9,17 @@
         android:id="@+id/mainFragment"
         android:name="com.zekes3dglasses.starterskeleton.ui.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/main_fragment"/>
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.zekes3dglasses.starterskeleton.DestinationFragment.DestinationFragment"
+        android:label="fragment_destination"
+        app:popUpTo="@+id/mainFragment"
+        app:popUpToInclusive="false"
+        tools:layout="@layout/fragment_destination" />
 </navigation>

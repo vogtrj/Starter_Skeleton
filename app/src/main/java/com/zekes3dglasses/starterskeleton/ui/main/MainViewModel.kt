@@ -9,7 +9,7 @@ class MainViewModel : ViewModel() {
 
 
     // Demonstration of LiveData being used with backing field
-    private val _sampleIntLiveData = MutableLiveData<Int>()
+    private val _sampleIntLiveData = MutableLiveData<Int>(0)
     val sampleIntLiveData: LiveData<Int>
         get() = _sampleIntLiveData
 

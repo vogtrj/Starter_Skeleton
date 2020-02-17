@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Starter Skeleton</string>
     <string name="add_button">Make that number bigger</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_nav_button">Go To Fragment</string>
 </resources>
